@@ -13,3 +13,30 @@ let insertX = ['Willy the Goblin','Big Daddy','Father Christmas'];
 let insertY =['the soup kitchen','Disneyland','the White House'];
 let inseryZ =['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
 
+storyText = storyText.replace(':insertx:', insertX);
+storyText = storyText.replace(':inserty:', insertY);
+storyText = storyText.replace(':insertz:', inseryZ);
+
+
+randomize.addEventListener('click', result);
+
+function result() {
+  let newStory = storyText;
+  let xItem = randomValueFromArray(insertX);
+  let yItem = randomValueFromArray(insertY);
+  let zItem = randomValueFromArray(inseryZ);
+
+  if(customName.value !== '') {
+    let name = customName.value;
+
+  }
+
+  if(document.getElementById("uk").checked) {
+    let weight = Math.round(300);
+    let temperature =  Math.round(94);
+
+  }
+
+  story.textContent = ;
+  story.style.visibility = 'visible';
+}
