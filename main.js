@@ -28,6 +28,7 @@ function result() {
 
   if(customName.value !== '') {
     let name = customName.value;
+    storyText = storyText.replace('Bob', name);
 
   }
 
